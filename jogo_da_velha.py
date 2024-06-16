@@ -12,8 +12,8 @@ while jogada <=10:
     casa = 1
 
     #Monta a grade
-    print("      JOGO DA VELHA      ")
-    print("*" * 25)
+    print("        JOGO DA VELHA        ")
+    print("*" * 30)
     for indice, valor in enumerate(casas):
         if indice != 2 and indice != 5 and indice != 8:
             print(f" {valor} |", end='')
@@ -21,7 +21,7 @@ while jogada <=10:
             print(f" {valor}     {casa} | {casa+1} | {casa+2}")
             casa += 3
             if indice != 8: print("---|---|---   ---|---|---")
-    print("*" * 25)
+    print("*" * 30)
 
     #verifica se deu velha
     velha = []
